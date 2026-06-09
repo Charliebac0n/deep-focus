@@ -15,6 +15,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Colors, Fonts, Spacing } from '../theme';
 import { useSettings } from '../context/SettingsContext';
+import { useUser } from '../context/UserContext';
 
 const { height: SCREEN_HEIGHT } = Dimensions.get('window');
 const MODAL_HEIGHT = SCREEN_HEIGHT * 0.92;
@@ -120,6 +121,7 @@ function DropdownInput({ options, value, onChange }: { options: string[]; value:
 
 export default function SettingsModal() {
   const { settings, updateSetting, saveSettings, settingsVisible, setSettingsVisible } = useSettings();
+  const { signOut } = useUser();
   const insets = useSafeAreaInsets();
   const slideAnim = useRef(new Animated.Value(MODAL_HEIGHT)).current;
 
@@ -320,6 +322,17 @@ export default function SettingsModal() {
                   </View>
                 </React.Fragment>
               ))}
+            </View>
+            {/* ── ACCOUNT ── */}
+            <SectionHeader icon="🔒" title="ACCOUNT" />
+            <View style={s.card}>
+              <TouchableOpacity style={s.row} onPress={signOut} activeOpacity={0.75}>
+                <View style={s.rowLeft}>
+                  <Ionicons name="log-out-outline" size={16} color="#ef4444" style={{ marginRight: 8 }} />
+                  <Text style={[s.rowLabel, { color: '#ef4444' }]}>Sign Out</Text>
+                </View>
+                <Ionicons name="chevron-forward" size={16} color="#ef4444" style={{ opacity: 0.5 }} />
+              </TouchableOpacity>
             </View>
           </ScrollView>
 
