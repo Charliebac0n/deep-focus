@@ -21,6 +21,7 @@ export default {
       buildNumber: '1',
       infoPlist: {
         NSUserNotificationUsageDescription: 'Deep. sends reminders to start focus sessions and celebrates your streaks.',
+        ITSAppUsesNonExemptEncryption: false,
       },
     },
     android: {
