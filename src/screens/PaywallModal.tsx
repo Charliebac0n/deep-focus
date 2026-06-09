@@ -25,8 +25,8 @@ const FEATURES = [
   { icon: 'shield-checkmark-outline' as const, title: 'Streak Shield',       desc: 'Never lose your streak on rest days' },
 ];
 
-const PRIVACY_URL = 'https://deep-focus.app/privacy';
-const TERMS_URL   = 'https://deep-focus.app/terms';
+const PRIVACY_URL = 'https://charliebac0n.github.io/deep-focus/privacy.html';
+const TERMS_URL   = 'https://charliebac0n.github.io/deep-focus/terms.html';
 
 export default function PaywallModal() {
   const insets = useSafeAreaInsets();
