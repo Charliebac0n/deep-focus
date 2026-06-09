@@ -1,7 +1,6 @@
 import 'dotenv/config';
 
-// TODO: Replace with your RevenueCat iOS API key from app.revenuecat.com
-const RC_API_KEY_IOS = 'appl_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
+const RC_API_KEY_IOS = 'test_WvmqJbGpVomRFyzOgcyxoUvnUYl';
 
 export default {
   expo: {
