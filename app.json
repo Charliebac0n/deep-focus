@@ -1,0 +1,20 @@
+{
+  "expo": {
+    "name": "Deep.",
+    "slug": "deep-focus",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.deep.focus"
+    },
+    "android": {
+      "package": "com.deep.focus"
+    },
+    "plugins": [
+      "expo-font",
+      "expo-audio"
+    ]
+  }
+}

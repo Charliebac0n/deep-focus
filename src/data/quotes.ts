@@ -1,0 +1,158 @@
+export interface Quote {
+  text: string;
+  author: string;
+  category: 'focus' | 'ocean' | 'perseverance' | 'wisdom' | 'action' | 'mindfulness' | 'growth';
+}
+
+export const CATEGORY_LABELS: Record<Quote['category'], string> = {
+  focus:         '🎯 Focus',
+  ocean:         '🌊 Ocean',
+  perseverance:  '🔥 Perseverance',
+  wisdom:        '💡 Wisdom',
+  action:        '⚡ Action',
+  mindfulness:   '🌱 Mindfulness',
+  growth:        '📈 Growth',
+};
+
+export const QUOTES: Quote[] = [
+  // ── Focus ────────────────────────────────────────────────────────────────────
+  { text: 'Deep work is the superpower of the 21st century.', author: 'Cal Newport', category: 'focus' },
+  { text: 'Concentrate all your thoughts upon the work at hand. The sun\'s rays do not burn until brought to a focus.', author: 'Alexander Graham Bell', category: 'focus' },
+  { text: 'Where focus goes, energy flows.', author: 'Tony Robbins', category: 'focus' },
+  { text: 'The main thing is to keep the main thing the main thing.', author: 'Stephen Covey', category: 'focus' },
+  { text: 'Starve your distractions, feed your focus.', author: 'Unknown', category: 'focus' },
+  { text: 'If you chase two rabbits, you will catch neither.', author: 'Native American Proverb', category: 'focus' },
+  { text: 'Focused, hard work is the real key to success.', author: 'John Carmack', category: 'focus' },
+  { text: 'You can\'t do big things if you\'re distracted by small things.', author: 'Unknown', category: 'focus' },
+  { text: 'The ability to concentrate and to use your time well is everything.', author: 'Lee Iacocca', category: 'focus' },
+  { text: 'Focus is more valuable than intelligence.', author: 'Shane Parrish', category: 'focus' },
+  { text: 'Energy, not time, is the fundamental currency of high performance.', author: 'Tony Schwartz', category: 'focus' },
+  { text: 'Lack of direction, not lack of time, is the problem.', author: 'Zig Ziglar', category: 'focus' },
+  { text: 'The successful warrior is the average man with laser-like focus.', author: 'Bruce Lee', category: 'focus' },
+  { text: 'Clarity about what matters provides clarity about what does not.', author: 'Cal Newport', category: 'focus' },
+  { text: 'One reason so few achieve what they truly want is that they never concentrate their power.', author: 'Anthony Robbins', category: 'focus' },
+  { text: 'Single-tasking is the new superpower.', author: 'Unknown', category: 'focus' },
+  { text: 'The shorter way to do many things is to do only one thing at a time.', author: 'Mozart', category: 'focus' },
+  { text: 'Concentrate; put all your eggs in one basket and watch that basket.', author: 'Andrew Carnegie', category: 'focus' },
+  { text: 'It\'s not that I\'m so smart, it\'s just that I stay with problems longer.', author: 'Albert Einstein', category: 'focus' },
+  { text: 'Give whatever you are doing and whoever you are with the gift of your attention.', author: 'Jim Rohn', category: 'focus' },
+
+  // ── Ocean ─────────────────────────────────────────────────────────────────────
+  { text: 'The ocean does not apologize for its depth.', author: 'Ancient Wisdom', category: 'ocean' },
+  { text: 'Calm seas never made a skilled sailor.', author: 'English Proverb', category: 'ocean' },
+  { text: 'The sea, once it casts its spell, holds one in its net of wonder forever.', author: 'Jacques Cousteau', category: 'ocean' },
+  { text: 'Be like water — adapt, flow, and overcome.', author: 'Bruce Lee', category: 'ocean' },
+  { text: 'You can\'t stop the waves, but you can learn to surf.', author: 'Jon Kabat-Zinn', category: 'ocean' },
+  { text: 'The rivers know this: there is no hurry. We shall get there some day.', author: 'A.A. Milne', category: 'ocean' },
+  { text: 'I am not afraid of storms, for I am learning how to sail my ship.', author: 'Louisa May Alcott', category: 'ocean' },
+  { text: 'Water does not resist. Water flows. When you plunge your hand into it, all you feel is a caress.', author: 'Margaret Atwood', category: 'ocean' },
+  { text: 'The cure for anything is salt water: sweat, tears, or the sea.', author: 'Isak Dinesen', category: 'ocean' },
+  { text: 'We are tied to the ocean. And when we go back to the sea, we are going back from whence we came.', author: 'John F. Kennedy', category: 'ocean' },
+  { text: 'To reach a port we must sail — sail, not tie at anchor, sail, not drift.', author: 'Franklin D. Roosevelt', category: 'ocean' },
+  { text: 'A ship in harbour is safe, but that\'s not what ships are for.', author: 'John A. Shedd', category: 'ocean' },
+  { text: 'The deep is the only place where you find real treasures.', author: 'Unknown', category: 'ocean' },
+  { text: 'Life is like the ocean; it can be calm and still or rough and rigid, but in the end it\'s always beautiful.', author: 'Unknown', category: 'ocean' },
+  { text: 'In every outthrust headland, in every curving beach, in every grain of sand there is the story of the earth.', author: 'Rachel Carson', category: 'ocean' },
+  { text: 'The ocean stirs the heart, inspires the imagination and brings eternal joy to the soul.', author: 'Robert Wyland', category: 'ocean' },
+  { text: 'How inappropriate to call this planet Earth when it is quite clearly Ocean.', author: 'Arthur C. Clarke', category: 'ocean' },
+  { text: 'To go deep, you must first learn to be still.', author: 'Ancient Wisdom', category: 'ocean' },
+
+  // ── Perseverance ─────────────────────────────────────────────────────────────
+  { text: 'The man who moves a mountain begins by carrying away small stones.', author: 'Confucius', category: 'perseverance' },
+  { text: 'It does not matter how slowly you go as long as you do not stop.', author: 'Confucius', category: 'perseverance' },
+  { text: 'Success is not final, failure is not fatal: it is the courage to continue that counts.', author: 'Winston Churchill', category: 'perseverance' },
+  { text: 'Our greatest glory is not in never falling, but in rising every time we fall.', author: 'Confucius', category: 'perseverance' },
+  { text: 'Perseverance is not a long race; it is many short races one after another.', author: 'Walter Elliott', category: 'perseverance' },
+  { text: 'Fall seven times, stand up eight.', author: 'Japanese Proverb', category: 'perseverance' },
+  { text: 'The only guarantee for failure is to stop trying.', author: 'John C. Maxwell', category: 'perseverance' },
+  { text: 'Hard times don\'t create heroes. It\'s during hard times that the hero within us is revealed.', author: 'Bob Riley', category: 'perseverance' },
+  { text: 'Strength does not come from winning. Your struggles develop your strengths.', author: 'Arnold Schwarzenegger', category: 'perseverance' },
+  { text: 'Every champion was once a contender who refused to give up.', author: 'Rocky Balboa', category: 'perseverance' },
+  { text: 'The difference between a successful person and others is not a lack of strength, not a lack of knowledge, but rather a lack in will.', author: 'Vince Lombardi', category: 'perseverance' },
+  { text: 'It always seems impossible until it\'s done.', author: 'Nelson Mandela', category: 'perseverance' },
+  { text: 'Many of life\'s failures are people who did not realize how close they were to success when they gave up.', author: 'Thomas Edison', category: 'perseverance' },
+  { text: 'Most of the important things in the world have been accomplished by people who have kept on trying when there seemed to be no hope at all.', author: 'Dale Carnegie', category: 'perseverance' },
+  { text: 'You may have to fight a battle more than once to win it.', author: 'Margaret Thatcher', category: 'perseverance' },
+
+  // ── Wisdom ────────────────────────────────────────────────────────────────────
+  { text: 'The secret of getting ahead is getting started.', author: 'Mark Twain', category: 'wisdom' },
+  { text: 'Do the difficult things while they are easy.', author: 'Lao Tzu', category: 'wisdom' },
+  { text: 'The best time to plant a tree was 20 years ago. The second best time is now.', author: 'Chinese Proverb', category: 'wisdom' },
+  { text: 'Knowing yourself is the beginning of all wisdom.', author: 'Aristotle', category: 'wisdom' },
+  { text: 'The wise man does not lay up his own treasures. The more he gives to others, the more he has.', author: 'Lao Tzu', category: 'wisdom' },
+  { text: 'Yesterday I was clever, so I wanted to change the world. Today I am wise, so I am changing myself.', author: 'Rumi', category: 'wisdom' },
+  { text: 'An investment in knowledge pays the best interest.', author: 'Benjamin Franklin', category: 'wisdom' },
+  { text: 'The greatest wealth is to live content with little.', author: 'Plato', category: 'wisdom' },
+  { text: 'We are what we repeatedly do. Excellence, then, is not an act but a habit.', author: 'Aristotle', category: 'wisdom' },
+  { text: 'A fool thinks himself to be wise, but a wise man knows himself to be a fool.', author: 'William Shakespeare', category: 'wisdom' },
+  { text: 'Tell me and I forget. Teach me and I remember. Involve me and I learn.', author: 'Benjamin Franklin', category: 'wisdom' },
+  { text: 'The only true wisdom is in knowing you know nothing.', author: 'Socrates', category: 'wisdom' },
+  { text: 'He who has a why to live can bear almost any how.', author: 'Friedrich Nietzsche', category: 'wisdom' },
+  { text: 'Wisdom is not a product of schooling but of the lifelong attempt to acquire it.', author: 'Albert Einstein', category: 'wisdom' },
+  { text: 'The more that you read, the more things you will know.', author: 'Dr. Seuss', category: 'wisdom' },
+
+  // ── Action ────────────────────────────────────────────────────────────────────
+  { text: 'You don\'t have to see the whole staircase, just take the first step.', author: 'Martin Luther King Jr.', category: 'action' },
+  { text: 'The way to get started is to quit talking and begin doing.', author: 'Walt Disney', category: 'action' },
+  { text: 'Either you run the day or the day runs you.', author: 'Jim Rohn', category: 'action' },
+  { text: 'Action is the foundational key to all success.', author: 'Pablo Picasso', category: 'action' },
+  { text: 'Done is better than perfect.', author: 'Sheryl Sandberg', category: 'action' },
+  { text: 'Motivation is what gets you started. Habit is what keeps you going.', author: 'Jim Ryun', category: 'action' },
+  { text: 'You miss 100% of the shots you don\'t take.', author: 'Wayne Gretzky', category: 'action' },
+  { text: 'The best way to predict the future is to create it.', author: 'Peter Drucker', category: 'action' },
+  { text: 'Don\'t wait. The time will never be just right.', author: 'Napoleon Hill', category: 'action' },
+  { text: 'Think of many things; do one.', author: 'Portuguese Proverb', category: 'action' },
+  { text: 'To begin, begin.', author: 'William Wordsworth', category: 'action' },
+  { text: 'An ounce of action is worth a ton of theory.', author: 'Ralph Waldo Emerson', category: 'action' },
+  { text: 'In any moment of decision, the best thing you can do is the right thing. The worst thing you can do is nothing.', author: 'Theodore Roosevelt', category: 'action' },
+  { text: 'Start where you are. Use what you have. Do what you can.', author: 'Arthur Ashe', category: 'action' },
+  { text: 'Nothing will work unless you do.', author: 'Maya Angelou', category: 'action' },
+  { text: 'Imperfect action is better than perfect inaction.', author: 'Harry Truman', category: 'action' },
+  { text: 'Do what you can, with what you have, where you are.', author: 'Theodore Roosevelt', category: 'action' },
+  { text: 'Stop wishing. Start doing.', author: 'Unknown', category: 'action' },
+
+  // ── Mindfulness ───────────────────────────────────────────────────────────────
+  { text: 'The present moment is the only moment available to us.', author: 'Thich Nhat Hanh', category: 'mindfulness' },
+  { text: 'Be here now.', author: 'Ram Dass', category: 'mindfulness' },
+  { text: 'Wherever you are, be all there.', author: 'Jim Elliot', category: 'mindfulness' },
+  { text: 'Peace is not the absence of chaos, but the presence of calm.', author: 'Unknown', category: 'mindfulness' },
+  { text: 'Almost everything will work again if you unplug it for a few minutes, including you.', author: 'Anne Lamott', category: 'mindfulness' },
+  { text: 'In the middle of every difficulty lies opportunity.', author: 'Albert Einstein', category: 'mindfulness' },
+  { text: 'Yesterday is history, tomorrow is a mystery, today is a gift.', author: 'Eleanor Roosevelt', category: 'mindfulness' },
+  { text: 'If you are depressed you are living in the past. If you are anxious you are living in the future. If you are at peace you are living in the present.', author: 'Lao Tzu', category: 'mindfulness' },
+  { text: 'The quieter you become, the more you are able to hear.', author: 'Rumi', category: 'mindfulness' },
+  { text: 'Breath is the bridge which connects life to consciousness.', author: 'Thich Nhat Hanh', category: 'mindfulness' },
+  { text: 'Set peace of mind as your highest goal, and organize your life around it.', author: 'Brian Tracy', category: 'mindfulness' },
+  { text: 'Your calm mind is the ultimate weapon against your challenges.', author: 'Bryant McGill', category: 'mindfulness' },
+  { text: 'Tension is who you think you should be. Relaxation is who you are.', author: 'Chinese Proverb', category: 'mindfulness' },
+  { text: 'Rest is not idleness, and to lie sometimes on the grass under trees on a summer\'s day is by no means a waste of time.', author: 'John Lubbock', category: 'mindfulness' },
+  { text: 'Each morning we are born again. What we do today is what matters most.', author: 'Jack Kornfield', category: 'mindfulness' },
+
+  // ── Growth ────────────────────────────────────────────────────────────────────
+  { text: 'Great things are done by a series of small things brought together.', author: 'Vincent van Gogh', category: 'growth' },
+  { text: 'Small daily improvements over time lead to stunning results.', author: 'Robin Sharma', category: 'growth' },
+  { text: 'What you do today can improve all your tomorrows.', author: 'Ralph Marston', category: 'growth' },
+  { text: 'Success is the sum of small efforts repeated day in and day out.', author: 'Robert Collier', category: 'growth' },
+  { text: 'You are never too old to set another goal or to dream a new dream.', author: 'C.S. Lewis', category: 'growth' },
+  { text: 'The only person you are destined to become is the person you decide to be.', author: 'Ralph Waldo Emerson', category: 'growth' },
+  { text: 'If we\'re growing, we\'re always going to be out of our comfort zone.', author: 'John Maxwell', category: 'growth' },
+  { text: 'Commit to a nightly re-examination of your day. You can\'t improve what you don\'t measure.', author: 'Tim Ferriss', category: 'growth' },
+  { text: 'You don\'t rise to the level of your goals, you fall to the level of your systems.', author: 'James Clear', category: 'growth' },
+  { text: 'Every action you take is a vote for the type of person you wish to become.', author: 'James Clear', category: 'growth' },
+  { text: 'The more you learn, the more you earn.', author: 'Warren Buffett', category: 'growth' },
+  { text: 'The real measure of your wealth is how much you\'d be worth if you lost all your money.', author: 'Unknown', category: 'growth' },
+  { text: 'If you want to achieve greatness, stop asking for permission.', author: 'Unknown', category: 'growth' },
+  { text: 'Dreams don\'t work unless you do.', author: 'John C. Maxwell', category: 'growth' },
+  { text: 'The difference between who you are and who you want to be is what you do.', author: 'Unknown', category: 'growth' },
+  { text: 'Hard work beats talent when talent doesn\'t work hard.', author: 'Tim Notke', category: 'growth' },
+  { text: 'Don\'t count the days, make the days count.', author: 'Muhammad Ali', category: 'growth' },
+  { text: 'It\'s not about how bad you want it. It\'s about how hard you\'re willing to work for it.', author: 'Unknown', category: 'growth' },
+  { text: 'Work hard in silence; let your success be the noise.', author: 'Frank Ocean', category: 'growth' },
+  { text: 'Be patient with yourself. Self-growth is tender; it\'s holy ground.', author: 'Stephen Covey', category: 'growth' },
+];
+
+export function getDailyQuote(): Quote {
+  const startOfYear = new Date(new Date().getFullYear(), 0, 1).getTime();
+  const dayOfYear = Math.floor((Date.now() - startOfYear) / 86400000);
+  return QUOTES[dayOfYear % QUOTES.length];
+}
