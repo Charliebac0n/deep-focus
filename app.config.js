@@ -41,6 +41,9 @@ export default {
       supabaseUrl: process.env.SUPABASE_URL ?? '',
       supabaseAnonKey: process.env.SUPABASE_ANON_KEY ?? '',
       rcApiKeyIos: RC_API_KEY_IOS,
+      eas: {
+        projectId: '0ab779f7-9813-4c92-86cc-ef150d50e0fe',
+      },
     },
   },
 };
